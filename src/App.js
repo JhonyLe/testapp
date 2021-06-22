@@ -11,8 +11,8 @@ import React from "react";
 
 class App extends React.Component {
   componentDidUpdate(prevProps) {
-    if (this.props.location !== prevProps.location) {
-      window.ym(81519523, 'hit', window.location.href);
+    if (this.props.location.pathname !== prevProps.location.pathname) {
+      window.ym(81671785, 'hit', window.location.href);
     }
   }
 
@@ -34,3 +34,10 @@ class App extends React.Component {
 }
 
 export default withRouter(App);
+
+
+
+
+
+
+
